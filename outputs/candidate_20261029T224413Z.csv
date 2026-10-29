@@ -1,0 +1,4 @@
+destino,periodo_estimado,valor,unidad,run_id,fecha_generacion,version_procedimiento
+Destino por confirmar,2026-07-01,283388.6987866118,viajeros/mes,20261029T224413Z,2026-10-29T22:44:13.609737+00:00,seasonal_naive_12
+Destino por confirmar,2026-08-01,293780.5243930469,viajeros/mes,20261029T224413Z,2026-10-29T22:44:13.609802+00:00,seasonal_naive_12
+Destino por confirmar,2026-09-01,218069.51122057904,viajeros/mes,20261029T224413Z,2026-10-29T22:44:13.609845+00:00,seasonal_naive_12

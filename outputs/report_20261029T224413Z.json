@@ -1,0 +1,51 @@
+{
+  "run_id": "20261029T224413Z",
+  "source": "data/serie_total_mensual.csv",
+  "started_at": "2026-10-29T22:44:13.592470+00:00",
+  "source_sha256": "727c1a71092871d1a33a542316058949e11a6320f665719ee7f436e24c580e8a",
+  "checks": [
+    {
+      "control": "columnas",
+      "status": "PASS",
+      "detail": "Columnas requeridas: Fecha, Viajero"
+    },
+    {
+      "control": "tipos",
+      "status": "PASS",
+      "detail": "Fechas parseables y valores numericos"
+    },
+    {
+      "control": "fechas_y_cobertura",
+      "status": "PASS",
+      "detail": "Cobertura mensual configurada y fechas validas"
+    },
+    {
+      "control": "unicidad",
+      "status": "PASS",
+      "detail": "Una fila por mes"
+    },
+    {
+      "control": "faltantes",
+      "status": "PASS",
+      "detail": "Sin valores ausentes en meses requeridos"
+    },
+    {
+      "control": "valores_y_denominadores",
+      "status": "PASS",
+      "detail": "Conteos no negativos y factor de reparto positivo"
+    },
+    {
+      "control": "regla_metodologica",
+      "status": "PASS",
+      "detail": "Fuente mensual declarada; no sumar presencias diarias"
+    }
+  ],
+  "metrics": {
+    "mae": 108928.4553551852,
+    "baseline_mae": 29529.239057690662,
+    "evaluated_months": 12
+  },
+  "accepted": false,
+  "publication": "Rechazado; se conserva approved.csv si existe",
+  "finished_at": "2026-10-29T22:44:13.611418+00:00"
+}
