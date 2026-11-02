@@ -1,1 +1,41 @@
-{"source":"data/serie_total_mensual.csv","date_column":"Fecha","value_column":"Viajero","expected_start":"2009-01-01","expected_end":"2026-06-01","train_end":"2020-12-01","evaluation_start":"2021-01-01","evaluation_end":"2021-12-01","forecast_months":3,"destination":"Destino por confirmar","unit":"viajeros/mes","distribution_factor":1.0,"max_mae":1000000000,"max_ratio_to_baseline":1.0,"method":"seasonal_naive_12","seed":42}
+{
+  "destino": "Guatemala (total nacional)",
+  "experimento_mlflow": "lab11-viajeros-guatemala",
+  "tracking_uri_local": "sqlite:///mlflow_local/mlflow.db",
+  "fuente": {
+    "ruta": "data/serie_total_mensual.csv",
+    "tipo": "mensual",
+    "columna_fecha": "Fecha",
+    "columna_valor": "Viajero",
+    "columnas_prohibidas": ["Dia", "Presencias", "presencias_diarias"]
+  },
+  "periodos": {
+    "cobertura_inicio": "2009-01-01",
+    "cobertura_fin": "2026-06-01",
+    "ajuste_fin": "2024-12-01",
+    "evaluacion_inicio": "2025-01-01",
+    "evaluacion_fin": "2025-12-01",
+    "meses_sin_observacion_comparable": ["2026-01-01", "2026-02-01"],
+    "meses_faltantes_permitidos": []
+  },
+  "procedimiento": {
+    "metodo": "estacional_ingenuo",
+    "version": "1.0.0",
+    "formula": "estimacion(t) = observado(t - rezago_estacional) * factor_reparto",
+    "rezago_estacional": 12,
+    "factor_reparto": 1.0,
+    "meses_pronostico": 3,
+    "unidad": "viajeros por mes",
+    "semilla": 42
+  },
+  "aceptacion": {
+    "mape_maximo": 10.0,
+    "razon_mae_referencia_maxima": 1.0
+  },
+  "monitoreo": {
+    "variacion_maxima": 0.30
+  },
+  "rutas": {
+    "salidas": "outputs"
+  }
+}
