@@ -1,0 +1,4 @@
+2026-11-02T00:28:03+00:00 [INFO] Etapa completada: lectura
+2026-11-02T00:28:04+00:00 [ALERTA] calidad: No se pudo medir la calidad porque faltan columnas indispensables
+2026-11-02T00:28:04+00:00 [ERROR] Ejecución detenida en validacion: Controles críticos fallidos. columnas_y_tipos: Faltan columnas indispensables: ['Viajero']
+2026-11-02T00:28:04+00:00 [INFO] Resultado de la publicación: No publicada, se conserva la versión aprobada vigente

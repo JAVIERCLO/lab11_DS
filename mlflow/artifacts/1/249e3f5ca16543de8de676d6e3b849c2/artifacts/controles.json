@@ -1,0 +1,7 @@
+[
+  {
+    "control": "columnas_y_tipos",
+    "estado": "FALLA",
+    "detalle": "Faltan columnas indispensables: ['Viajero']"
+  }
+]

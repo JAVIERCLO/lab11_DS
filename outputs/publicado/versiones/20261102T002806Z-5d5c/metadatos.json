@@ -1,0 +1,26 @@
+{
+  "run_id": "20261102T002806Z-5d5c",
+  "mlflow_run_id": "4200c4efbb264fa5a624e0bad8d61792",
+  "git_commit": "a5c234113ac8144bae15568ace6df4e9d7667bed",
+  "fecha_generacion": "2026-11-02T00:28:06+00:00",
+  "destino": "Guatemala (total nacional)",
+  "unidad": "viajeros por mes",
+  "version_procedimiento": "estacional_ingenuo-1.0.0",
+  "fuente_sha256": "1e11325697080cf7dd8284f6f25099a7bf3923acdb9be846ef35c7d0b1bf2f21",
+  "ultimo_mes_observado": "2026-06-01",
+  "periodo_evaluado": [
+    "2025-01",
+    "2025-12"
+  ],
+  "metricas": {
+    "mae_procedimiento": 16241.421589288795,
+    "rmse_procedimiento": 23389.837421049328,
+    "mape_procedimiento": 5.779394443275932,
+    "mae_referencia": 39541.54116397862,
+    "rmse_referencia": 45104.300447196474,
+    "mape_referencia": 14.513697031906847,
+    "razon_mae_referencia": 0.41074326167348113,
+    "meses_evaluados": 12
+  },
+  "sha256": "adf63c91239d92c800f9286d12ab88cd85ed00f1db92cec39ac03b81480716ae"
+}

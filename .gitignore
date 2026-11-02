@@ -4,5 +4,7 @@ __pycache__/
 .DS_Store
 mlflow_local/
 outputs_prueba/
-data/pruebas/
+outputs/pruebas/
 mlflow/mlflow.db-journal
+mlruns/
+informe/

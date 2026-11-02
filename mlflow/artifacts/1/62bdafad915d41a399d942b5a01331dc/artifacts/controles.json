@@ -1,0 +1,32 @@
+[
+  {
+    "control": "columnas_y_tipos",
+    "estado": "PASA",
+    "detalle": "Columnas Fecha y Viajero presentes con tipos compatibles"
+  },
+  {
+    "control": "fechas_y_cobertura",
+    "estado": "PASA",
+    "detalle": "210 meses entre 2009-01 y 2026-06"
+  },
+  {
+    "control": "unicidad",
+    "estado": "PASA",
+    "detalle": "Una fila por mes"
+  },
+  {
+    "control": "faltantes",
+    "estado": "PASA",
+    "detalle": "Sin valores ausentes"
+  },
+  {
+    "control": "valores_y_denominadores",
+    "estado": "ADVERTENCIA",
+    "detalle": "Valores con decimales, la fuente parece ajustada y no un conteo directo"
+  },
+  {
+    "control": "regla_metodologica",
+    "estado": "PASA",
+    "detalle": "Serie tomada de la fuente mensual, sin sumar presencias diarias"
+  }
+]

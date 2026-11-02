@@ -1,0 +1,77 @@
+{
+  "run_id": "20261102T002800Z-c906",
+  "mlflow_run_id": "4310868e901b4339b52d7076b167f1c2",
+  "git_commit": "a5c234113ac8144bae15568ace6df4e9d7667bed",
+  "fecha": "2026-11-02T00:28:00+00:00",
+  "fuente_sha256": "ab7db6d3a2a5119c9c7e60c07969a91385f4e70df1efe3ede29d65983484fa24",
+  "controles": [
+    {
+      "control": "columnas_y_tipos",
+      "estado": "PASA",
+      "detalle": "Columnas Fecha y Viajero presentes con tipos compatibles"
+    },
+    {
+      "control": "fechas_y_cobertura",
+      "estado": "PASA",
+      "detalle": "210 meses entre 2009-01 y 2026-06"
+    },
+    {
+      "control": "unicidad",
+      "estado": "FALLA",
+      "detalle": "Meses repetidos según la clave destino-mes: ['2026-06']"
+    },
+    {
+      "control": "faltantes",
+      "estado": "PASA",
+      "detalle": "Sin valores ausentes"
+    },
+    {
+      "control": "valores_y_denominadores",
+      "estado": "ADVERTENCIA",
+      "detalle": "Valores con decimales, la fuente parece ajustada y no un conteo directo"
+    },
+    {
+      "control": "regla_metodologica",
+      "estado": "PASA",
+      "detalle": "Serie tomada de la fuente mensual, sin sumar presencias diarias"
+    }
+  ],
+  "resumen_calidad": {
+    "filas": 211,
+    "faltantes": 0,
+    "duplicados": 1,
+    "meses_cubiertos": 210
+  },
+  "error": {
+    "etapa": "validacion",
+    "causa": "Controles críticos fallidos. unicidad: Meses repetidos según la clave destino-mes: ['2026-06']"
+  },
+  "estado": "FALLIDA",
+  "publicacion": "No publicada, se conserva la versión aprobada vigente",
+  "version_vigente": "20261102T002732Z-8d66",
+  "monitoreo": {
+    "run_id": "20261102T002800Z-c906",
+    "inicio": "2026-11-02T00:28:00+00:00",
+    "fin": "2026-11-02T00:28:00+00:00",
+    "etapas_completadas": [
+      "lectura"
+    ],
+    "advertencias": [
+      "valores_y_denominadores: Valores con decimales, la fuente parece ajustada y no un conteo directo"
+    ],
+    "errores": [
+      "Ejecución detenida en validacion: Controles críticos fallidos. unicidad: Meses repetidos según la clave destino-mes: ['2026-06']"
+    ],
+    "alertas": [
+      {
+        "verificacion": "calidad",
+        "mensaje": "duplicados subió de 0 a 1"
+      },
+      {
+        "verificacion": "calidad",
+        "mensaje": "La fuente pasó de 210 a 211 filas"
+      }
+    ],
+    "publicacion": "No publicada, se conserva la versión aprobada vigente"
+  }
+}

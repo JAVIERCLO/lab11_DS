@@ -1,0 +1,10 @@
+{
+  "aceptada": true,
+  "criterios": {
+    "controles_calidad": true,
+    "integridad_salida": true,
+    "mape_dentro_de_umbral": true,
+    "no_peor_que_referencia": true
+  },
+  "problemas_salida": []
+}

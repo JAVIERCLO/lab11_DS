@@ -1,12 +1,11 @@
 import json
-from pathlib import Path
 
 import pandas as pd
 
 from src.pipeline import RAIZ, cargar_config
 
 
-def generar(destino=RAIZ / "data" / "pruebas"):
+def generar(destino=RAIZ / "outputs" / "pruebas"):
     cfg = cargar_config(RAIZ / "config" / "config.json")
     original = pd.read_csv(RAIZ / cfg["fuente"]["ruta"])
     destino.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,43 @@
+{
+  "run_id": "20261102T002803Z-0292",
+  "mlflow_run_id": "249e3f5ca16543de8de676d6e3b849c2",
+  "git_commit": "a5c234113ac8144bae15568ace6df4e9d7667bed",
+  "fecha": "2026-11-02T00:28:03+00:00",
+  "fuente_sha256": "7c46f105e9db73a410b8fb44594bafc85fe3907e7b383615ce41ecc729678369",
+  "controles": [
+    {
+      "control": "columnas_y_tipos",
+      "estado": "FALLA",
+      "detalle": "Faltan columnas indispensables: ['Viajero']"
+    }
+  ],
+  "resumen_calidad": {
+    "filas": 210
+  },
+  "error": {
+    "etapa": "validacion",
+    "causa": "Controles críticos fallidos. columnas_y_tipos: Faltan columnas indispensables: ['Viajero']"
+  },
+  "estado": "FALLIDA",
+  "publicacion": "No publicada, se conserva la versión aprobada vigente",
+  "version_vigente": "20261102T002732Z-8d66",
+  "monitoreo": {
+    "run_id": "20261102T002803Z-0292",
+    "inicio": "2026-11-02T00:28:03+00:00",
+    "fin": "2026-11-02T00:28:04+00:00",
+    "etapas_completadas": [
+      "lectura"
+    ],
+    "advertencias": [],
+    "errores": [
+      "Ejecución detenida en validacion: Controles críticos fallidos. columnas_y_tipos: Faltan columnas indispensables: ['Viajero']"
+    ],
+    "alertas": [
+      {
+        "verificacion": "calidad",
+        "mensaje": "No se pudo medir la calidad porque faltan columnas indispensables"
+      }
+    ],
+    "publicacion": "No publicada, se conserva la versión aprobada vigente"
+  }
+}

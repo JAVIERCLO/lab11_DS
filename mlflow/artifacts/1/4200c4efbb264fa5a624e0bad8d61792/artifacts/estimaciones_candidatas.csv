@@ -1,0 +1,4 @@
+destino,periodo_estimado,valor,unidad,tipo,run_id,fecha_generacion,version_procedimiento
+Guatemala (total nacional),2026-07-01,283388.7,viajeros por mes,estimado,20261102T002806Z-5d5c,2026-11-02T00:28:06+00:00,estacional_ingenuo-1.0.0
+Guatemala (total nacional),2026-08-01,293780.52,viajeros por mes,estimado,20261102T002806Z-5d5c,2026-11-02T00:28:06+00:00,estacional_ingenuo-1.0.0
+Guatemala (total nacional),2026-09-01,218069.51,viajeros por mes,estimado,20261102T002806Z-5d5c,2026-11-02T00:28:06+00:00,estacional_ingenuo-1.0.0

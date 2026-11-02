@@ -1,0 +1,6 @@
+2026-11-02T00:28:00+00:00 [INFO] Etapa completada: lectura
+2026-11-02T00:28:00+00:00 [ADVERTENCIA] valores_y_denominadores: Valores con decimales, la fuente parece ajustada y no un conteo directo
+2026-11-02T00:28:00+00:00 [ALERTA] calidad: duplicados subió de 0 a 1
+2026-11-02T00:28:00+00:00 [ALERTA] calidad: La fuente pasó de 210 a 211 filas
+2026-11-02T00:28:00+00:00 [ERROR] Ejecución detenida en validacion: Controles críticos fallidos. unicidad: Meses repetidos según la clave destino-mes: ['2026-06']
+2026-11-02T00:28:00+00:00 [INFO] Resultado de la publicación: No publicada, se conserva la versión aprobada vigente

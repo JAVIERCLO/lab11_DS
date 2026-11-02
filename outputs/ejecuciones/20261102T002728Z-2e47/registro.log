@@ -1,0 +1,12 @@
+2026-11-02T00:27:28+00:00 [INFO] Etapa completada: lectura
+2026-11-02T00:27:29+00:00 [ADVERTENCIA] valores_y_denominadores: Valores con decimales, la fuente parece ajustada y no un conteo directo
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: validacion
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: preparacion
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: ajuste
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: evaluacion
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: estimacion
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: almacenamiento
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: monitoreo
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: aceptacion
+2026-11-02T00:27:29+00:00 [INFO] Etapa completada: publicacion
+2026-11-02T00:27:29+00:00 [INFO] Resultado de la publicación: Publicada como versión vigente 20261102T002728Z-2e47
