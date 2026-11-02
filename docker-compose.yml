@@ -1,0 +1,45 @@
+services:
+  mlflow:
+    build: .
+    image: lab11-observatorio
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri sqlite:////app/mlflow/mlflow.db
+      --artifacts-destination /app/mlflow/artifacts
+      --serve-artifacts
+      --allowed-hosts mlflow:5000,localhost:5001,127.0.0.1:5001
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./mlflow:/app/mlflow
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 5s
+      retries: 20
+
+  pipeline:
+    image: lab11-observatorio
+    profiles: ["pipeline"]
+    command: python -m src.pipeline
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    volumes:
+      - ${DATA_DIR:-./data}:/app/data:ro
+      - ./config:/app/config:ro
+      - ./outputs:/app/outputs
+      - ./.git:/app/.git:ro
+    depends_on:
+      mlflow:
+        condition: service_healthy
+
+  tablero:
+    image: lab11-observatorio
+    command: streamlit run app/tablero.py --server.address 0.0.0.0 --server.port 8501
+    ports:
+      - "8501:8501"
+    volumes:
+      - ${DATA_DIR:-./data}:/app/data:ro
+      - ./config:/app/config:ro
+      - ./outputs:/app/outputs:ro
+    depends_on:
+      - mlflow
